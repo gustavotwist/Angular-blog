@@ -9,6 +9,7 @@ import { MenuBarComponent } from './menu-bar.component';
   imports: [
     BrowserModule
   ],
+  exports: [MenuBarComponent],
   providers: [],
 })
 export class MenuBarModule { }
