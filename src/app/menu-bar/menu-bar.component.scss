@@ -1,0 +1,42 @@
+.nav {
+  margin: 0;
+  width: 100%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  margin-top: 2em;
+}
+.nav-container, .nav {
+  width: 100%;
+}
+a{
+  color: #808080;
+  cursor: pointer;
+}
+.active-class{
+ color: rgb(0, 0, 0);
+ font-weight: 600;
+}
+.inactive-class{
+  color: rgb(105, 104, 104);
+}
+
+.nav-link {
+  position: relative;
+  padding: 8px 0;
+  margin-right: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: black; 
+}
